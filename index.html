@@ -41,7 +41,7 @@
         </div>
         <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
             <!-- card-1 -->
-            <div class="card bg-base-100 shadow-xl">
+            <div onclick="handleCLikBtn('K. Accessories', 39.00)" class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                     <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -58,7 +58,7 @@
                 </div>
             </div>
             <!-- card-2 -->
-            <div class="card bg-base-100 shadow-xl">
+            <div onclick="handleCLikBtn('Children Play', 25.00)" class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                     <img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -70,12 +70,12 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div>
-                    <h2 class="card-title">K. Accessories</h2>
+                    <h2 class="card-title">Children play</h2>
                     <p>25.00 TK</p>
                 </div>
             </div>
             <!-- card-3 -->
-            <div class="card bg-base-100 shadow-xl">
+            <div onclick="handleCLikBtn('Home Cooker', 49.00)" class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                     <img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -99,17 +99,33 @@
                         <span class="label-text text-xl">Have coupon?</span>
                     </label>
                     <label class="input-group">
-                        <input type="text" placeholder="coupon code" class="input input-bordered" />
+                        <input type="text" placeholder="coupon code" class=" input input-bordered" />
                         <span class="bg-[#E527B2] text-white">Apply</span>
                     </label>
                 </div>
+                <!-- dynamic-div -->
+                <div class="selected-items" id="selected-items"></div>
                 <!-- counter -->
                 <div class="mt-5">
-                    <p><span class="font-bold">Total price: </span> 257.00TK</p>
-                    <p><span class="font-bold">Discount :</span> 51.40TK</p>
-                    <p><span class="font-bold">Total:</span> 205.60 TK</p>
+                    <p><span class="font-bold">Total price: </span> 00.00TK</p>
+                    <p><span class="font-bold">Discount :</span> 00.00TK</p>
+                    <p><span class="font-bold">Total:</span> 00.00 TK</p>
                 </div>
-                <button class="btn btn-secondary w-full mt-5">Secondary</button>
+                <div>
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button class="btn btn-secondary w-full mt-5 text-white" onclick="my_modal_1.showModal()">open modal</button>
+                    <dialog id="my_modal_1" class="modal">
+                        <form method="dialog" class="modal-box">
+                            <img class="mx-auto" src="./images/congo.png" alt="">
+                            <h3 class="font-bold text-2xl text-center">Congratulations</h3>
+                            <p class="py-4 text-center">Your Purchase the product</p>
+                            <div class="modal-action">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn btn-secondary mx-auto">Go Home</button>
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
             </div>
         </div>
         <!-- card grid 2 -->
@@ -118,7 +134,7 @@
         </div>
         <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
             <!-- card-1 -->
-            <div class="card bg-base-100 shadow-xl">
+            <div onclick="handleCLikBtn('Sports Back Cap', 49.00)" class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                     <img src="./images/prod4.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -135,7 +151,7 @@
                 </div>
             </div>
             <!-- card-2 -->
-            <div class="card bg-base-100 shadow-xl">
+            <div onclick="handleCLikBtn('Full Jersey Set', 69.00)" class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                     <img src="./images/prod5.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -152,7 +168,7 @@
                 </div>
             </div>
             <!-- card-3 -->
-            <div class="card bg-base-100 shadow-xl">
+            <div onclick="handleCLikBtn('Sports cates', 159.00)" class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                     <img src="./images/prod6.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -172,7 +188,8 @@
         <!-- footer -->
 
         <footer class="mt-14 text-center mb-10">
-            <p>&copy;Design By <a target="_blank" href="https://www.facebook.com/mh.sifatul11">SIFAT</a></p>
+            <p>&copy;Design By <span class="text-teal-600"><a target="_blank"
+                        href="https://www.facebook.com/mh.sifatul11">SIFAT</a></span></p>
         </footer>
     </main>
 
