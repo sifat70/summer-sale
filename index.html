@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Sale</title>
+    <!-- tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fond work sens -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- custrom css -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <h1>Hello World</h1>
+
+<body class="">
+    <header class="">
+        <div class="lg:flex md:flex w-full h-[80vh] bg-[#F9F6E2]">
+            <!-- Banner Content -->
+            <div class="flex-1 justify-center text-center my-auto mx-auto">
+                <h1 class="text-3xl">---SALE FEVER---</h1>
+                <p class="font-extrabold lg:text-5xl lg:mt-3">Purchase TK 200 or <br> above & get <span class="text-pink-600">20% off</span></p>
+                <p class="lg:pt-5">Use Promo Code <span><button class="btn btn-secondary">Secondary</button></span></p>
+                
+            </div>
+            <!-- Banner Image -->
+            <div class="flex-1">
+                <img class="h-full" src="./images/Summer 1.png" alt="">
+            </div>
+        </div>
+    </header>
 </body>
+
 </html>
