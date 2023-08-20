@@ -5,6 +5,7 @@ function handleCLikBtn(target, price) {
 
     const li = document.createElement("li");
     li.innerText = target;
+    li.style.listStyle = 'none';
     selectedItemContainer.appendChild(li);
 
     const TotalPrice = price;
