@@ -33,14 +33,16 @@ function handleCLikBtn(target, price) {
     return total;
 }
 
-    
+
+
+
+
 
 const discoundTotal = document.getElementById('discound-btn').addEventListener('click', function () {
+    const cuponCode = document.getElementById('input-cupon');
 
-    
-
-
-    const discoundCalculation = parseFloat(total * 0.80);
+    if(cuponCode.value === 'SELL200'){
+        const discoundCalculation = parseFloat(total * 0.80);
     const discoundTaka = parseFloat((total - discoundCalculation).toFixed(2));
 
 
@@ -53,6 +55,7 @@ const discoundTotal = document.getElementById('discound-btn').addEventListener('
     const totalPayAmound = document.getElementById('total-pay-amount');
     const totalAmoundCalculation = parseFloat(total) - parseFloat(discoundTaka);
     totalPayAmound.innerText = totalAmoundCalculation;
+    }else{
+        alert('Input Right Cupon & Enjoy Discound');
+    }
 })
-
-
