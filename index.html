@@ -113,7 +113,7 @@
                 </div>
                 <div>
                     <!-- Open the modal using ID.showModal() method -->
-                    <button class="btn btn-secondary w-full mt-5 text-white" onclick="my_modal_1.showModal()">open modal</button>
+                    <button id="purchase-btn" disabled class="btn btn-secondary w-full mt-5 text-white" onclick="my_modal_1.showModal()">Make Purchase</button>
                     <dialog id="my_modal_1" class="modal">
                         <form method="dialog" class="modal-box">
                             <img class="mx-auto" src="./images/congo.png" alt="">
@@ -121,7 +121,7 @@
                             <p class="py-4 text-center">Your Purchase the product</p>
                             <div class="modal-action">
                                 <!-- if there is a button in form, it will close the modal -->
-                                <button class="btn btn-secondary mx-auto">Go Home</button>
+                                <button id="modal-btn" class="btn btn-secondary mx-auto">Go Home</button>
                             </div>
                         </form>
                     </dialog>
