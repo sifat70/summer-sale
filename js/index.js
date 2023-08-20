@@ -58,4 +58,11 @@ const discoundTotal = document.getElementById('discound-btn').addEventListener('
     }else{
         alert('Input Right Cupon & Enjoy Discound');
     }
+
+    
+
+})
+
+const modalBtn = document.getElementById('modal-btn').addEventListener('click', function(){
+    window.location.href = 'index.html';
 })
