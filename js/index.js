@@ -11,16 +11,35 @@ function handleCLikBtn(target, price) {
     total = parseFloat(total) + parseFloat(price);
     document.getElementById("total-price").innerText = total;
 
+
+                            /* validation start */
     const purchaseValidation = document.getElementById('purchase-btn')
     if(total >= 1){
-    purchaseValidation.removeAttribute('disabled');
+        purchaseValidation.removeAttribute('disabled');
     }else{
         purchaseValidation.setAttribute('disabled', true);
-    }    
+    }
+    const applyBtnDisabled = document.getElementById('discound-btn');
+    if(total >= 200){
+        applyBtnDisabled.removeAttribute('disabled');
+    }else{
+        applyBtnDisabled.setAttribute('disabled', true);
+    }
+
+
+                              /* validation end */
+
+                              
     return total;
 }
 
+    
+
 const discoundTotal = document.getElementById('discound-btn').addEventListener('click', function () {
+
+    
+
+
     const discoundCalculation = parseFloat(total * 0.80);
     const discoundTaka = parseFloat((total - discoundCalculation).toFixed(2));
 
@@ -35,3 +54,5 @@ const discoundTotal = document.getElementById('discound-btn').addEventListener('
     const totalAmoundCalculation = parseFloat(total) - parseFloat(discoundTaka);
     totalPayAmound.innerText = totalAmoundCalculation;
 })
+
+
